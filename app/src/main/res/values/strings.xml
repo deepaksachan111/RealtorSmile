@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Realtor Smile</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Dashboard</item>
+        <item >People</item>
+        <item >Activities</item>
+        <item >Contacts</item>
+        <item >Leads</item>
+        <item >Properties</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="Saveandnew">Save &amp; New</string>
+    <string name="title_activity_contact_profile">ContactProfileActivity</string>
+    <string name="title_activity_contact_new_add">ContactNewAddActivity</string>
+    <string name="title_activity_user_activities">UserActivities</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_meeting">MeetingActivity</string>
+    <string name="title_activity_follow_up">FollowUp</string>
+    <string name="title_activity_inspection">Inspection</string>
+    <string name="title_activity_task">Task</string>
+    <string name="title_activity_event">Event</string>
+    <string name="title_activity_add_contact_vendor">AddContactVendorActivity</string>
+    <string name="title_activity_lead">LeadActivity</string>
+    <string name="title_activity_document">DocumentActivity</string>
+    <string name="title_activity_add_new_document">AddNewDocumentActivity</string>
+    <string name="title_activity_file_picker">FilePicker</string>
+    <string name="title_activity_document_activities">DocumentActivities</string>
+    <string name="title_activity_add_residential_listing">AddResidentialListing</string>
+    <string name="title_activity_add_listing_commercial_property">AddListingCommercialProperty
+    </string>
+    <string name="title_activity_add_land_listing">AddLandListing</string>
+    <string name="title_activity_call">CallActivity</string>
+
+</resources>

@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/listingactivities_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/listing_search_editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_layout_bg"
+            android:padding="7dp"
+            android:paddingBottom="3dp"
+            android:textColor="#888"
+            android:hint="Search here.."
+            android:paddingTop="3dp"
+            android:paddingRight="3dp"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/listing_listview_header"/>
+
+    <ListView
+        android:id="@+id/listing_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#adb8c2"
+        android:dividerHeight="1dp"/>
+</LinearLayout>
+<!-- From: file:/D:/DeepakAndroid/RealtorSmile/app/src/main/res/layout/listing_activity.xml -->

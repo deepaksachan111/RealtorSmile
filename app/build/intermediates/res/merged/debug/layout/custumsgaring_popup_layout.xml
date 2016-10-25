@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/custom_group_popup_window"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10">
+
+        <View
+            android:id="@+id/_customsharing_dropdown_dummyView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="2.8"
+            android:background="@null"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="7.2"
+            android:background="#eee"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#FFCFDCE1"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Employee Groups"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#FFCFDCE1"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Associate Groups"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_all_employee_custumsharing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#FFCFDCE1"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="All Employee "
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <ListView
+                android:id="@+id/add_all_employee_dropdown_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/tv_all_associates_custumsharing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#FFCFDCE1"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="All Associate "
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <ListView
+                android:id="@+id/add_all_associates_dropdown_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                </ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout><!-- From: file:/D:/DeepakAndroid/RealtorSmile/app/src/main/res/layout/custumsgaring_popup_layout.xml -->

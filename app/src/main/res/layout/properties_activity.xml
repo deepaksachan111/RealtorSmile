@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#eeeeee"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="5.5">
+
+
+        <EditText
+            android:id="@+id/properties_search_editText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="3.1"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_layout_bg"
+            android:paddingLeft="7dp"
+            android:paddingBottom="3dp"
+            android:textColor="#888"
+            android:hint="Search here.."
+            android:paddingTop="3dp"
+            android:paddingRight="3dp"/>
+
+
+        <Spinner
+            android:id="@+id/contact_search_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/spinner_bg"
+            android:layout_margin="3dp"
+            android:layout_weight="1.9"></Spinner>
+
+        <Button
+            android:id="@+id/contact_search_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:background="@mipmap/search"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0.4"/>
+    </LinearLayout>
+
+    <include layout="@layout/contact_list_view_header"/>
+
+    <ListView
+        android:id="@+id/prop_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:dividerHeight="2dp"/>
+</LinearLayout>

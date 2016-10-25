@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/meeting"
+        android:title="Meeting"/>
+    <item android:id="@+id/followup"
+        android:title="FollowUp"/>
+    <item android:id="@+id/inspection"
+        android:title="Inspection"/>
+    <item android:id="@+id/task"
+        android:title="Task"/>
+    <item android:id="@+id/call"
+        android:title="Call"/>
+    <item android:id="@+id/event"
+        android:title="Event"/>
+</menu>
+<!-- From: file:/D:/DeepakAndroid/RealtorSmile/app/src/main/res/menu/menu_popup_activities.xml -->

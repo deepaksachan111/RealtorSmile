@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/residential_listing"
+        android:title="Residential Listing"/>
+    <item android:id="@+id/commercial_listing"
+        android:title="Commercial Listing"/>
+    <item android:id="@+id/landplot_listing"
+        android:title="Land/Plot Listing"/>
+
+</menu>

@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+   <!-- xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"-->
+
+   <!-- <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />-->
+    <item android:id="@+id/general"
+          android:title="General"/>
+    <item android:id="@+id/client"
+          android:title="Client"/>
+    <item android:id="@+id/agent"
+          android:title="Agent"/>
+    <item android:id="@+id/builder"
+          android:title="Builder"/>
+    <item android:id="@+id/vendor"
+          android:title="Vendor"/>
+
+</menu>

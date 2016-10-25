@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@mipmap/bg1">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/logo" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/register_radioGroup"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/agent_radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/custom_radio_button"
+                        android:checked="true"
+                        android:textColor="#eee"
+                        android:text=" Agent"
+                        android:textSize="19sp" />
+
+                    <RadioButton
+                        android:id="@+id/builder_radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/custom_radio_button"
+                        android:checked="false"
+                        android:textColor="#eee"
+                        android:text=" Builder"
+                        android:textSize="19sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/register_firstNameEt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_layout_bg"
+                    android:hint="First Name"
+                    android:paddingLeft="5dp"
+                    android:textColor="#888888"
+                    android:textSize="19sp" />
+
+                <EditText
+                    android:id="@+id/register_lastNameEt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_layout_bg"
+                    android:hint="Last Name"
+                    android:paddingLeft="5dp"
+                    android:textColor="#888888"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/register_companyNameEt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_layout_bg"
+                android:hint="Compnay Name"
+                android:paddingLeft="5dp"
+                android:textColor="#888888"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/register_mobileNoEt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_layout_bg"
+                android:hint="Mobile"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:textColor="#888888"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/register_emailEt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_layout_bg"
+                android:hint="Email ID"
+                android:paddingLeft="5dp"
+                android:textColor="#888888"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/register_pswdEt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_layout_bg"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:textColor="#888888"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/register_cnfrmPswdEt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_layout_bg"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:textColor="#888888"
+                android:textSize="19sp" />
+
+            <Spinner
+                android:id="@+id/register_citySpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/spinner_bg"
+                android:hint="City"
+                android:paddingLeft="3dp"
+                android:textColor="#888888"
+                android:textSize="19sp" />
+
+            <Spinner
+                android:id="@+id/register_localitySpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+
+
+                android:background="@drawable/spinner_bg"
+                android:paddingLeft="3dp"
+                android:textColor="#888888"
+                android:textSize="19sp" />
+
+            <Spinner
+                android:id="@+id/register_peopleSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/spinner_bg"
+                android:hint="How Many People will use ?"
+                android:paddingLeft="3dp"
+                android:textColor="#888888"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/register_submitBtn"
+                android:layout_width="190dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="#13b586"
+                android:text="Register"
+                android:textColor="#fff"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

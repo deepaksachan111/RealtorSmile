@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_resident_listing"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/add_resident_listing_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#899aa0"
+        android:padding="4dp">
+
+        <TextView
+             android:padding="5dp"
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="New AddListing Residential Property"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_resident_listing_back_btn"
+            android:background="@mipmap/icon"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toLeftOf="@+id/textView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/assignTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Assigned To*"
+                    android:textColor="#B94A48"
+                    android:textSize="19sp"/>
+                <Spinner
+                    android:id="@+id/spinner_add_resident_listing_assignedTo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.2"
+                    android:background="@drawable/spinner_bg"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <!-- agent group-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_add_resident_listing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="3.8"
+                    android:text="Opportunity Value*"
+                    android:textColor="#B94A48"
+                    android:textSize="19sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.2"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edt_add_resident_listing_opportunityvalue"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:inputType="textLongMessage"
+                        android:background="@drawable/edit_layout_bg"
+                        android:paddingLeft="5dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:textColor="#B94A48"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Browse Property"
+                    android:textSize="19sp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_add_resident_listing_browseproperty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.2"
+                    android:background="@drawable/spinner_bg"
+                    android:hint="Company Name"
+                    android:padding="3dp"
+                    android:paddingLeft="7dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Possession "
+                    android:textSize="19sp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_add_resident_listing_possession"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.2"
+                    android:background="@drawable/spinner_bg"
+                    android:hint="Possession"
+                    android:paddingLeft="7dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Listing For* "
+                    android:textColor="#B94A48"
+                    android:textSize="19sp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_add_resident_listing_listingfor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.2"
+                    android:background="@drawable/spinner_bg"
+                    android:hint="Listing For"
+                    android:inputType="number"
+                    android:paddingLeft="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Available Form "
+                    android:textSize="19sp"/>
+
+                <EditText
+                    android:background="@drawable/spinner_bg"
+                    android:id="@+id/edt_add_resident_listing_availablefrom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.2"
+                    android:drawableRight="@mipmap/calendar_img"
+                    android:paddingLeft="7dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Expiry On "
+                    android:textSize="19sp"/>
+
+                <EditText
+                    android:background="@drawable/spinner_bg"
+                    android:id="@+id/add_resident_listing_expiryon"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.2"
+                    android:drawableRight="@mipmap/calendar_img"
+                    android:paddingLeft="7dp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Remarks "
+                    android:textSize="19sp"/>
+
+                <EditText
+                    android:id="@+id/add_resident_listing_remark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.2"
+                    android:background="@drawable/edit_layout_bg"
+                    android:hint="Remarks"
+                    android:minLines="2"
+                    android:paddingLeft="7dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="3.8"
+                        android:text="Visibility "
+                        android:textSize="19sp"/>
+
+
+                    <RadioGroup
+                        android:id="@+id/add_resident_listing_radiogroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <RadioButton
+                            android:id="@+id/add_resident_listing_publicRb"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Public"
+                            android:textSize="13sp"/>
+
+                        <RadioButton
+                            android:id="@+id/add_resident_listing_privateRb"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Private"
+                            android:textSize="13sp"/>
+
+                        <RadioButton
+                            android:id="@+id/add_resident_listing_myTeamRb"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="My Team"
+                            android:textSize="13sp"/>
+
+                        <RadioButton
+                            android:id="@+id/add_resident_listing_customRb"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:text="Custom"
+                            android:textSize="13sp"
+                            />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_add_resident_listing_cusotmVisibilityEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_layout_bg"
+                android:hint="custom sharing"
+                android:paddingLeft="7dp"
+                android:textColor="#888"
+                android:visibility="gone"
+                />
+            <!-- Check Box -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="7dp">
+
+                <CheckBox
+                    android:id="@+id/add_resident_listing_emailnotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Notification"
+                    android:textSize="18sp"/>
+
+                <CheckBox
+                    android:id="@+id/add_resident_listing_smsnotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sms Notification"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+
+
+            <!-- Save Contact-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <Button
+                    android:id="@+id/add_resident_listing_saveBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_layout_bg"
+                    android:padding="5dp"
+                    android:text="Save"/>
+
+
+                <Button
+                    android:id="@+id/add_resident_listing_save_n_NewBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_layout_bg"
+                    android:padding="5dp"
+                    android:text="@string/Saveandnew"/>
+
+                <Button
+                    android:id="@+id/add_resident_listing_cancelBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_layout_bg"
+                    android:padding="5dp"
+                    android:paddingLeft="4dp"
+                    android:text="Cancel"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout><!-- From: file:/D:/DeepakAndroid/RealtorSmile/app/src/main/res/layout/activity_add_residential_listing.xml -->

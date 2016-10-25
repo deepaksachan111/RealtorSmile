@@ -1,0 +1,469 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="quaere.com.realtorsmile.ContactActivity.AddGeneralActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="3dp"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:layout_margin="1dp"
+    android:background="@drawable/counter_bg"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<ImageView
+    android:layout_marginRight="5dp"
+    android:src="@mipmap/contacts_rs"
+    android:layout_width="20dp"
+    android:layout_height="20dp" />
+    <TextView
+        android:id="@+id/tv_contact_type"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:text="General"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+<TextView
+
+    android:textSize="20dp"
+    android:text="Basic Details"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="#B94A48"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Assign To*"/>
+        <Spinner
+            android:layout_weight="2.5"
+            android:background="@drawable/spinner_bg"
+            android:theme="@android:style/Theme.Holo.Light"
+             android:id="@+id/addnewgene_spiner_assignto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_weight="1"
+            android:textColor="#B94A48"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="General Group*"/>
+
+        <com.thomashaertel.widget.MultiSpinner
+            android:background="@drawable/spinner_bg"
+            android:textSize="16dp"
+            android:padding="7dp"
+            android:layout_weight="2"
+            android:id="@+id/addnewgene_spinnerMultiselect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_plusicon"
+            android:src="@drawable/plusicon"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#B94A48"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="First Name*"/>
+        <Spinner
+
+            android:padding="7dp"
+            android:background="@drawable/spinner_bg"
+            android:layout_weight=".9"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:id="@+id/addnewgene_spiner_firstnametype"
+            android:layout_width="0dp"
+            android:layout_height="35dp"></Spinner>
+        <EditText
+            android:id="@+id/edt_addnewgroup_genereal_firstname"
+            android:background="@drawable/edit_layout_bg"
+            android:layout_weight="1.6"
+            android:padding="5dp"
+            android:hint="First Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#B94A48"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Last Name*"/>
+
+        <EditText
+            android:id="@+id/edt_addnewgroup_genereal_lastname"
+            android:background="@drawable/edit_layout_bg"
+            android:layout_weight="2.5"
+            android:padding="5dp"
+            android:hint="Last Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#B94A48"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mobile*"/>
+
+        <EditText
+            android:id="@+id/edt_addnewgroup_genereal_mobileno."
+            android:layout_centerInParent="true"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/phone"
+            android:background="@drawable/edit_layout_bg"
+            android:layout_weight="2.5"
+            android:padding="5dp"
+            android:hint="Mobile no."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="EMail"/>
+
+        <EditText
+            android:id="@+id/edt_addnewgroup_genereal_email"
+            android:layout_centerInParent="true"
+            android:drawablePadding="10dp"
+            android:background="@drawable/edit_layout_bg"
+            android:layout_weight="2.5"
+            android:padding="5dp"
+            android:hint="EMail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+
+            android:textSize="20dp"
+            android:text="Source / Remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+    <LinearLayout
+
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Source"/>
+<FrameLayout
+    android:layout_weight="2.0"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+
+        <EditText
+
+            android:focusable="false"
+            android:id="@+id/ed_addnewgene_selectsource"
+            android:padding="5dp"
+            android:background="@drawable/spinner_bg"
+            android:hint="General"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+</FrameLayout>
+        <ImageView
+            android:id="@+id/iv_plusicon2"
+            android:src="@drawable/plusicon"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <Spinner
+                android:visibility="gone"
+                android:id="@+id/spinner_addnewgene_selectsource2"
+                android:layout_centerInParent="true"
+                android:background="@drawable/spinner_bg"
+                android:layout_weight="2.5"
+                android:hint="Source Detail"
+                android:layout_width="0dp"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Remark"/>
+
+            <EditText
+                android:id="@+id/edt_addnewgroup_genereal_remark"
+                android:layout_centerInParent="true"
+                android:drawablePadding="10dp"
+                android:background="@drawable/edit_layout_bg"
+                android:layout_weight="2.5"
+                android:padding="5dp"
+                android:hint="Remark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visibility"/>
+        <LinearLayout
+
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/radiogroup_addnewgroup_genereal_visibility"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio_general_public"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Public"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radio_general_private"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Private" />
+                <RadioButton
+                    android:id="@+id/radio_general_myteam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MyTeam" />
+
+                <RadioButton
+                    android:id="@+id/radio_general_custom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Custom" />
+            </RadioGroup>
+        </LinearLayout>
+
+<LinearLayout
+
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content" />
+<EditText
+    android:visibility="gone"
+    android:id="@+id/edt_addnewgene_customsahreing"
+    android:padding="5dp"
+    android:background="@drawable/edit_layout_bg"
+    android:layout_weight="2.5"
+    android:hint="Custom Sharing"
+    android:layout_width="0dp"
+    android:layout_height="35dp" />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Is Featured"/>
+             <CheckBox
+                 android:id="@+id/checkbox_addnewgene_isfeatured"
+                 android:layout_weight=".5"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ProfilePhoto"/>
+            <FrameLayout
+
+                android:layout_weight="2.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:focusable="false"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_layout_bg"
+                    android:id="@+id/edt_addnewgene_selectprofilephoto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+
+                <Button
+                    android:background="@drawable/edit_layout_bg"
+                    android:hint="Select File"
+                    android:id="@+id/btn_addnewgene_selectprofilephoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_gravity="right" />
+
+            </FrameLayout>
+        </LinearLayout>
+<ImageView
+    android:id="@+id/iv_profile_picset"
+    android:layout_gravity="center"
+    android:src="@drawable/ic_launcher"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/check_addnewgene_emailnotification"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+            <TextView
+
+                android:text="Email Notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <CheckBox
+            android:id="@+id/check_addnewgene_smsnotification"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:text="SMS Notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_addnewgene_save"
+                android:text="Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_addnewgene_saveandnew"
+                android:text="@string/Saveandnew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_addnewgene_cancel"
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

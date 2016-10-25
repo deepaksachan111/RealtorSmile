@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#be164057"
+    android:layout_marginTop="3dp"
+    android:id="@+id/listing_list_view_header"
+    tools:ignore="HardcodedText,ContentDescription">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/listing_checkBox_header"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:focusableInTouchMode="false"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="Listing Tittle"/>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Properties Owner"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/D:/DeepakAndroid/RealtorSmile/app/src/main/res/layout/listing_listview_header.xml -->

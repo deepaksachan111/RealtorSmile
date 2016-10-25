@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contact_add_agent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/contact_list_view_header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#899aa0"
+        android:padding="4dp">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="New Agent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/add_agent_back_btn"
+            android:background="@mipmap/backimg"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toLeftOf="@+id/textView4"
+            android:layout_marginRight="67dp"
+            android:layout_marginEnd="67dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Personal Details"
+                android:background="#fff"
+                android:paddingLeft="10dp"
+                android:textSize="19sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_complete">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/assignTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Assigned To*"
+                    android:textColor="#B94A48"
+                    android:textSize="19sp"/>
+
+                <Spinner
+                    android:id="@+id/add_agent_assignedTo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.2"
+                    android:background="@drawable/spinner_bg"
+                    android:padding="3dp"/>
+
+            </LinearLayout>
+
+            <!-- agent group-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/agentGrouptTv"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="3.8"
+                    android:text="Agent Group*"
+                    android:textColor="#B94A48"
+                    android:textSize="19sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.2"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/add_agent_groupEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:inputType="textLongMessage"
+                        android:background="@drawable/edit_layout_bg"
+                        android:paddingLeft="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_layout_bg">
+
+                    <Button
+                        android:id="@+id/add_agent_grouptBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/plus_sign"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- First name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="First Name*"
+                    android:textColor="#B94A48"
+                    android:textSize="19sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="6.2"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <Spinner
+                        android:id="@+id/add_agent_title_spinner"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.8"
+                        android:background="@drawable/spinner_bg"/>
+
+                    <EditText
+                        android:id="@+id/add_agent_firstNameEt"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="8.2"
+                        android:background="@drawable/edit_layout_bg"
+                        android:hint="First Name"
+                        android:paddingLeft="7dp"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Last Name"
+                    android:textSize="19sp"/>
+
+                <EditText
+                    android:id="@+id/add_agent_lastNameEt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.2"
+                    android:background="@drawable/edit_layout_bg"
+                    android:hint="Last Name"
+                    android:paddingLeft="7dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Company "
+                    android:textSize="19sp"/>
+
+                <EditText
+                    android:id="@+id/add_agent_companyNameEt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.2"
+                    android:background="@drawable/edit_layout_bg"
+                    android:hint="Company Name"
+                    android:padding="3dp"
+                    android:paddingLeft="7dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Designation "
+                    android:textSize="19sp"/>
+
+                <EditText
+                    android:id="@+id/add_agent_designationEt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.2"
+                    android:background="@drawable/edit_layout_bg"
+                    android:hint="Designation"
+                    android:paddingLeft="7dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Email"
+                    android:textSize="19sp"/>
+
+                <EditText
+                    android:id="@+id/add_agent_emailEt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.2"
+                    android:background="@drawable/edit_layout_bg"
+                    android:hint="Email"
+                    android:paddingLeft="7dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Mobile* "
+                    android:textColor="#B94A48"
+                    android:textSize="19sp"/>
+
+                <EditText
+                    android:id="@+id/add_agent_mobileEt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@mipmap/ic_phone_black_24dp"
+                    android:layout_weight="6.2"
+                    android:background="@drawable/edit_layout_bg"
+                    android:hint=" Mobile No's"
+                    android:inputType="number"
+                    android:paddingLeft="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Phone "
+                    android:textSize="19sp"/>
+
+                <EditText
+                    android:id="@+id/add_agent_phoneEt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.2"
+                    android:background="@drawable/edit_layout_bg"
+                    android:hint="Phone"
+                    android:inputType="number"
+                    android:paddingLeft="7dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="Source/Remarks"
+                android:paddingLeft="10dp"
+                android:textSize="19sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_complete">
+            </LinearLayout>
+            <!-- Source group-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.8"
+                    android:paddingTop="4dp"
+                    android:text="Source"
+                    android:textSize="19sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <EditText
+                            android:id="@+id/add_agent_sourceEt"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8.8"
+                            android:editable="false"
+                            android:paddingLeft="8dp"
+                            android:background="@drawable/spinner_bg"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/edit_layout_bg">
+
+                            <Button
+                                android:id="@+id/add_agent_sourceBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@mipmap/plus_sign"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/add_agent_sourceDetailSpin"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/spinner_bg"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.8"
+                    android:text="Remarks "
+                    android:textSize="19sp"/>
+
+                <EditText
+                    android:id="@+id/add_agent_remarksEt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.2"
+                    android:background="@drawable/edit_layout_bg"
+                    android:hint="Remarks"
+                    android:inputType="textImeMultiLine"
+                    android:paddingLeft="7dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Other Details"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:textSize="19sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_complete">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="3.8"
+                        android:text="Visibility "
+                        android:textSize="19sp"/>
+
+
+                    <RadioGroup
+                        android:id="@+id/add_agent_radiogroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <RadioButton
+                            android:id="@+id/add_agent_publicRb"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Public"
+                            android:textSize="13sp"/>
+
+                        <RadioButton
+                            android:id="@+id/add_agent_privateRb"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Private"
+                            android:textSize="13sp"/>
+
+                        <RadioButton
+                            android:id="@+id/add_agent_myTeamRb"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="My Team"
+                            android:textSize="13sp"/>
+
+                        <RadioButton
+                            android:id="@+id/add_agent_customRb"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:text="Custom"
+                            android:textSize="13sp"
+                            />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/add_agent_cusotmVisibilityEt"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_layout_bg"
+                android:hint="custom sharer"
+                android:paddingLeft="7dp"
+                android:textColor="#888"
+                android:visibility="gone"
+                />
+            <!-- Check Box -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="7dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Is Featured"
+                    android:textSize="18sp"/>
+                <!--<LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"> -->
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Notification"
+                    android:textSize="18sp"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sms Notification"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="3.2"
+                    android:text="Profile Pic"
+                    android:textColor="#B94A48"
+                    android:textSize="19sp"/>
+
+
+                <EditText
+                    android:id="@+id/add_agent_uploadPicTv"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="5.6"
+                    android:background="@drawable/edit_layout_bg"
+                    android:editable="false"
+                    android:gravity="center_vertical"
+                    android:inputType="textLongMessage"
+                    android:paddingLeft="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_layout_bg">
+
+                    <Button
+                        android:id="@+id/add_agent_uploadpicBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@mipmap/plus_sign"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Save Contact-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <Button
+                    android:id="@+id/add_agent_saveBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_layout_bg"
+                    android:padding="5dp"
+                    android:text="Save"/>
+
+
+                <Button
+                    android:id="@+id/add_agent_save_n_NewBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_layout_bg"
+                    android:padding="5dp"
+                    android:text="@string/Saveandnew"/>
+
+                <Button
+                    android:id="@+id/add_agent_cancelBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_layout_bg"
+                    android:padding="5dp"
+                    android:paddingLeft="4dp"
+                    android:text="Cancel"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

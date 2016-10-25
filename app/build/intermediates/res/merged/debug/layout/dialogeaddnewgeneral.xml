@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:isScrollContainer="true"
+    android:background="@android:color/background_light">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="1dp">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:background="@android:color/darker_gray"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Quick Search" />
+
+            <TextView
+                android:padding="5dp"
+                android:textColor="#B94A48"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Source Name" />
+
+            <EditText
+                android:id="@+id/et_dialogeaddnewgeneral_contactgroup1"
+                android:padding="5dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_dialogeaddnewgeneral_save1"
+                    android:drawableLeft="@android:drawable/checkbox_on_background"
+                    android:text="Save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btn_dialogeaddnewgeneral_close1"
+                    android:text="Close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout ><!-- From: file:/D:/DeepakAndroid/RealtorSmile/app/src/main/res/layout/dialogeaddnewgeneral.xml -->

@@ -1,0 +1,431 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="quaere.com.realtorsmile.ContactActivity.AddGeneralActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="1dp"
+                android:background="@drawable/counter_bg"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/contacts_rs"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/tv_contact_type"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:text="Call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Assign To*"/>
+                <Spinner
+                    android:layout_weight="2.5"
+                    android:background="@drawable/spinner_bg"
+                    android:id="@+id/addnew_call_spiner_assignto"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></Spinner>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#B94A48"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Subject*"/>
+
+                <EditText
+                    android:id="@+id/edt_addnewgroup_call_subject"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/edit_layout_bg"
+                    android:layout_weight="2.5"
+                    android:padding="5dp"
+                    android:hint="subject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Visibility"/>
+                <RadioGroup
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                    android:id="@+id/radiogroup_call"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/radio_incoming"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Incoming"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/radio_outgoing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Outgoing" />
+
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Call Purpose"/>
+
+                <Spinner
+                    android:background="@drawable/spinner_bg"
+                    android:textSize="16dp"
+                    android:padding="7dp"
+                    android:layout_weight="2"
+                    android:id="@+id/addnew_call_spinner_callpurpose"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/iv_plusicon_call"
+                    android:src="@drawable/plusicon"
+                    android:layout_weight=".5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#B94A48"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Contact*"/>
+                <Spinner
+                    android:background="@drawable/spinner_bg"
+                    android:layout_weight="1.25"
+                    android:theme="@android:style/Theme.Holo.Light"
+                    android:id="@+id/addnew_call_spiner_contacttype1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></Spinner>
+                <Spinner
+                    android:id="@+id/edt_addnewcall_spiner_contacttype2"
+                    android:background="@drawable/edit_layout_bg"
+                    android:layout_weight="1.25"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+<!--  call Details-->
+<LinearLayout
+
+    android:layout_marginTop="10dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="Call Details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:padding="2dp"
+        android:background="@drawable/edit_layout_bg"
+        android:layout_weight="2.5"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+         <RadioGroup
+             android:checkedButton="@+id/button_1"
+             android:id="@+id/rd_currentcall"
+             android:orientation="horizontal"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+            <RadioButton
+
+
+                android:text="Current Call"
+                android:id="@+id/button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+             <RadioButton
+                 android:id="@+id/button_2"
+                 android:text="Completed Call"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+         </RadioGroup>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:background="@color/material_deep_teal_500"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:layout_weight="1"
+            android:text="Call Timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_call_timer_start"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:text="00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <Button
+
+            android:id="@+id/btn_call_timerstart"
+            android:padding="3dp"
+            android:text="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:visibility="gone"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/btn_call_timerstop"
+            android:padding="3dp"
+            android:text="stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:targetApi="ice_cream_sandwich" />
+</FrameLayout>
+    </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_weight="0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edt_call_startdate"
+                android:padding="5dp"
+                android:drawableRight="@mipmap/calendar_img"
+                android:background="@drawable/edit_layout_bg"
+                android:layout_weight="2.5"
+                android:hint="Call Startdate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <Spinner
+                android:id="@+id/spi_call_time"
+                android:background="@drawable/spinner_bg"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Time"
+                android:layout_width="0dp"
+                android:layout_height="35dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_weight="0"
+                android:text="Call Time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edt_calltime_mintue"
+                android:padding="5dp"
+                android:background="@drawable/edit_layout_bg"
+                android:layout_weight="2"
+                android:hint="Minutes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <EditText
+                android:id="@+id/edt_calltime_sec"
+                android:padding="5dp"
+                android:background="@drawable/edit_layout_bg"
+                android:layout_weight="2"
+                android:hint="Seconds"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+            <!--  end call Details-->
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Related To"/>
+
+                <Spinner
+                    android:id="@+id/spinner_call_realatedto"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_weight="2.5"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_spinner_call_realatedto2"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+                <Spinner
+                    android:id="@+id/spinner_call_realatedto2"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_weight="2.5"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Remark"/>
+
+                <EditText
+                    android:id="@+id/edt_addnewgroup_genereal_remark"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/edit_layout_bg"
+                    android:layout_weight="2.5"
+                    android:padding="5dp"
+                    android:hint="Remark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+  <!--  code for bottom-->
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_call_save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                />
+            <Button
+                android:id="@+id/btn_call_save_new"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Saveandnew"
+                />
+            <Button
+                android:id="@+id/btn_call_clear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

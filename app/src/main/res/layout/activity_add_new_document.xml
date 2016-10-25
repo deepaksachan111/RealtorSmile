@@ -1,0 +1,354 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="quaere.com.realtorsmile.DocumentsActivity.AddNewDocumentActivity">
+
+    <LinearLayout
+        android:layout_margin="1dp"
+        android:background="@color/list_background_pressed"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/contacts_rs"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:text="New Document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textColor="#B94A48"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Document Name*"/>
+                <EditText
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:background="@drawable/edit_layout_bg"
+                    android:theme="@android:style/Theme.Holo.Light"
+                    android:id="@+id/addnewdocument_edt_documentname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"></EditText>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp">
+                <TextView
+                    android:textColor="#B94A48"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Folder*"/>
+                <FrameLayout
+                    android:background="@drawable/spinner_bg"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <Spinner
+
+                        android:focusable="false"
+                        android:id="@+id/ed_addnewdocument_spinner_folder"
+                        android:background="@null"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+                <ImageView
+                    android:id="@+id/iv_documentfolder"
+                    android:src="@drawable/plusicon"
+                    android:layout_weight=".5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textColor="#B94A48"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Assign To*"/>
+                <Spinner
+                    android:layout_weight="2"
+                    android:background="@drawable/spinner_bg"
+                    android:id="@+id/addnewdocument_spiner_assignto"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Description"/>
+                <EditText
+                    android:minLines="2"
+                    android:id="@+id/edt_addnewdocument_edt_description"
+                    android:background="@drawable/edit_layout_bg"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:hint="Description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Keywords"/>
+
+                <EditText
+                    android:id="@+id/edt_addnewdocument_edt_keywords"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/edit_layout_bg"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:hint="Keywords"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Related to"/>
+                <Spinner
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:background="@drawable/spinner_bg"
+                    android:theme="@android:style/Theme.Holo.Light"
+                    android:id="@+id/addnewdocument_spiner_relatedto"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></Spinner>
+                <Spinner
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:background="@drawable/spinner_bg"
+                    android:theme="@android:style/Theme.Holo.Light"
+                    android:id="@+id/addnewdocument_spiner_relatedto2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></Spinner>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visibility"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:id="@+id/radiogroup_addnewgroup_doucument_visibility"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/radio_doucument_public"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Public"
+                        android:checked="true" />
+                    <RadioButton
+                        android:id="@+id/radio_doucument_private"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Private" />
+                    <RadioButton
+                        android:id="@+id/radio_doucument_myteam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MyTeam" />
+
+                    <RadioButton
+                        android:id="@+id/radio_document_custom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Custom" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_addnewdocument_customsharing"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/edt_addnewdocument_customsharing"
+                    android:padding="5dp"
+                    android:background="@drawable/edit_layout_bg"
+                    android:layout_weight="2"
+                    android:hint="Custom Sharing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Document Attachment"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_google_drive_attachment"
+                    android:padding="5dp"
+                    android:background="@drawable/edit_layout_bg"
+                    android:layout_weight="1"
+                    android:text="Google DropBox Drive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_realtorsmile_attachment"
+                    android:padding="5dp"
+                    android:background="@drawable/edit_layout_bg"
+                    android:layout_weight="1"
+                    android:text="RealtorSmile Drive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_linear_choosefile"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Choose file"/>
+                <FrameLayout
+
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+
+                        android:focusable="false"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit_layout_bg"
+                        android:id="@+id/edt_addnewdoucument_chosefile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true" />
+
+                    <Button
+                        android:background="@drawable/edit_layout_bg"
+                        android:hint="Choose file"
+                        android:id="@+id/btn_addnewdocument_choosefile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:layout_gravity="right" />
+
+                </FrameLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_profile_picset"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_addnewdocument_save"
+                    android:text="Save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btn_addnewdocument_saveandnew"
+                    android:text="@string/Saveandnew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btn_addnewdoucument_cancel"
+                    android:text="Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

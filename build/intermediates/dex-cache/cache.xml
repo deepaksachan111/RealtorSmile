@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\RealtorSmile\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f8d34bdf57ee49177110c50453065e48ce9e989f">
+        <dex dex="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\pre-dexed\debug\classes-c72952d0cec939fe5d0233d81d6481a7342513f6.jar" />
+    </item>
+    <item
+        jar="D:\DeepakAndroid\RealtorSmile\app\libs\android-async-http-1.4.8.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="77bbfe240e437ecb396d982afa0d3bd4f9090ba7">
+        <dex dex="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.8-ee99de54ede0600d2e5de5930cc0537e0ab474d3.jar" />
+    </item>
+    <item
+        jar="D:\programming softwares\adt-bundle-windows-x86_64-20140702\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-8ab8a1c82ed19a98a3e7305c65a55efde60a744b.jar" />
+    </item>
+    <item
+        jar="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\com.thomashaertel\multispinner\0.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="12dd916d5fff52b91d9512c377d2be79180679a5">
+        <dex dex="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\pre-dexed\debug\classes-1deb0310835a1804fb635b71df6402045e682984.jar" />
+    </item>
+    <item
+        jar="D:\DeepakAndroid\RealtorSmile\app\libs\httpclient-4.5.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a1e6cbb3cc2c5f210dd1310ff9fcb2c09c0d1438">
+        <dex dex="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\pre-dexed\debug\httpclient-4.5-3f083bbe607a948a57001ad46d65661a5b47838b.jar" />
+    </item>
+    <item
+        jar="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\pre-dexed\debug\classes-87d9fc8a701e80792ab33ee724bc7ce9555bef02.jar" />
+    </item>
+    <item
+        jar="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\com.github.traex.rippleeffect\library\1.3\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ee17feb34ce104bc17d1a1e64346d7f779ebb066">
+        <dex dex="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\pre-dexed\debug\classes-26f2c9623591e1ed46f6854278eaddc286b49919.jar" />
+    </item>
+    <item
+        jar="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\pre-dexed\debug\classes-027ea878c4fddf313171b4f5224d19f7e49a0a73.jar" />
+    </item>
+    <item
+        jar="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-6b4edd3cbfca1c27b9f861ba120ad037ed960146.jar" />
+    </item>
+    <item
+        jar="D:\DeepakAndroid\RealtorSmile\app\libs\httpcore-4.4.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f5aa318bda4c6c8d688c9d00b90681dcd82ce636">
+        <dex dex="D:\DeepakAndroid\RealtorSmile\app\build\intermediates\pre-dexed\debug\httpcore-4.4.1-16ca83d645ebde3c6e5454dc99f79f3a64613830.jar" />
+    </item>
+
+</items>

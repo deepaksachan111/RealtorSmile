@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="#e5e5e5"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<TextView
+    android:padding="5dp"
+    android:layout_marginLeft="5dp"
+    android:textColor="#000"
+    android:text="Referred By"
+    android:textStyle="bold|italic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_addnew_gene_client"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Clients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_addnew_gene_agent"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="Agents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_addnew_gene_builder"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="Builder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_addnew_gene_vendor"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="Vendor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_addnew_gene_general"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="General"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_addnew_gene_lead"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Lead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_addnew_gene_associate"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="Associate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_addnew_gene_employee"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="Employee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_addnew_gene_compaign"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Compaign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"
+        android:textStyle="bold|italic"
+        android:text="Others"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:padding="5dp"
+        android:cacheColorHint="#0cd"
+        android:id="@+id/listviewpopup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Close"
+        android:id="@+id/declineButton"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout><!-- From: file:/D:/DeepakAndroid/RealtorSmile/app/src/main/res/layout/listview_popup.xml -->

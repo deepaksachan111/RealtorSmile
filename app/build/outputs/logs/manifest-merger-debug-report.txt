@@ -1,0 +1,251 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:2:1-139:12
+	xmlns:android
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:2:11-69
+	package
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml
+		INJECTED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml
+		INJECTED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml
+		INJECTED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:5:4-66
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:5:21-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:7:22-77
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.SEND_SMS
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:9:22-64
+application
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:11:5-137:19
+MERGED from [com.android.support:appcompat-v7:22.1.1] D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.1.1] D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.github.traex.rippleeffect:library:1.3] D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\com.github.traex.rippleeffect\library\1.3\AndroidManifest.xml:12:5-20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:14:9-41
+	android:allowBackup
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:12:9-35
+	android:icon
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:13:9-44
+	android:theme
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:15:9-40
+activity#quaere.com.realtorsmile.swipeview.SwipeImageMainActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:16:9-24:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:18:13-45
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:17:13-61
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:22:27-74
+activity#quaere.com.realtorsmile.ContactActivity.ContactsActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:25:9-28:73
+	android:windowSoftInputMode
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:28:13-70
+	android:configChanges
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:27:13-74
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:26:13-61
+activity#quaere.com.realtorsmile.LoginActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:30:9-51
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:30:19-48
+activity#quaere.com.realtorsmile.MainPage
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:31:9-46
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:31:19-43
+activity#quaere.com.realtorsmile.RegisterActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:32:9-54
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:32:19-51
+activity#quaere.com.realtorsmile.MainActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:33:9-50
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:33:19-47
+activity#quaere.com.realtorsmile.PropertiesActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:34:9-56
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:34:19-53
+activity#quaere.com.realtorsmile.ContactActivity.ContactProfileActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:35:9-38:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:37:13-67
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:36:13-67
+activity#quaere.com.realtorsmile.ContactActivity.AddGeneralActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:39:9-42:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:41:13-67
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:40:13-63
+activity#quaere.com.realtorsmile.UserActivities.UserActivities
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:43:9-48:20
+	android:windowSoftInputMode
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:47:13-70
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:46:13-67
+	android:configChanges
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:45:13-74
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:44:13-58
+activity#quaere.com.realtorsmile.ContactActivity.AddContactBuilderActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:49:9-52:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:51:13-46
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:50:13-70
+activity#quaere.com.realtorsmile.UserActivities.MeetingActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:53:9-58:20
+	android:windowSoftInputMode
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:56:13-70
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:57:13-59
+	android:configChanges
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:55:13-74
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:54:13-59
+activity#quaere.com.realtorsmile.UserActivities.FollowUp
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:59:9-64:20
+	android:windowSoftInputMode
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:62:13-70
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:63:13-61
+	android:configChanges
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:61:13-74
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:60:13-52
+activity#quaere.com.realtorsmile.UserActivities.Inspection
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:65:9-70:20
+	android:windowSoftInputMode
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:67:13-70
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:69:13-62
+	android:configChanges
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:66:13-74
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:68:13-54
+activity#quaere.com.realtorsmile.UserActivities.Task
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:71:9-74:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:73:13-56
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:72:13-48
+activity#quaere.com.realtorsmile.UserActivities.Event
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:75:9-78:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:77:13-57
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:76:13-49
+activity#quaere.com.realtorsmile.ContactActivity.AddContactVendorActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:79:9-82:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:81:13-70
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:80:13-69
+activity#quaere.com.realtorsmile.ContactActivity.AddContactClientActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:83:9-86:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:85:13-70
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:84:13-69
+activity#quaere.com.realtorsmile.ContactActivity.AddContactAgentActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:87:9-90:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:89:13-70
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:88:13-68
+activity#quaere.com.realtorsmile.ListingActivities.ListingActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:91:9-94:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:93:13-43
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:92:13-62
+activity#quaere.com.realtorsmile.DocumentsActivity.AddNewDocumentActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:95:9-99:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:98:13-68
+	android:exported
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:97:13-36
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:96:13-69
+activity#quaere.com.realtorsmile.DocumentsActivity.FilePicker
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:100:9-103:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:102:13-63
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:101:13-57
+activity#quaere.com.realtorsmile.DocumentsActivity.DocumentActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:104:9-107:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:106:13-60
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:105:13-63
+activity#quaere.com.realtorsmile.ListingActivities.AddResidentialListing
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:108:9-111:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:110:13-75
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:109:13-68
+activity#quaere.com.realtorsmile.ListingActivities.AddCommercialListing
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:112:9-115:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:114:13-83
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:113:13-67
+activity#quaere.com.realtorsmile.ListingActivities.AddLandListing
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:116:9-119:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:118:13-68
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:117:13-61
+activity#quaere.com.realtorsmile.UserActivities.CallActivity
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:120:9-123:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:122:13-56
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:121:13-56
+activity#quaere.com.realtorsmile.Profile.MyProfile
+ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:124:9-128:20
+	android:label
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:127:13-36
+	android:theme
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:125:13-60
+	android:name
+		ADDED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml:126:13-46
+uses-sdk
+INJECTED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [RealtorSmile:library:unspecified] D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\RealtorSmile\library\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:22.1.1] D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.1.1] D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.thomashaertel:multispinner:0.1.1] D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\com.thomashaertel\multispinner\0.1.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.traex.rippleeffect:library:1.3] D:\DeepakAndroid\RealtorSmile\app\build\intermediates\exploded-aar\com.github.traex.rippleeffect\library\1.3\AndroidManifest.xml:8:5-10:41
+	android:targetSdkVersion
+		INJECTED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml
+		INJECTED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml
+		INJECTED from D:\DeepakAndroid\RealtorSmile\app\src\main\AndroidManifest.xml

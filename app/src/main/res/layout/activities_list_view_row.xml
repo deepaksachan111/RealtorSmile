@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="4dp"
+    android:descendantFocusability="blocksDescendants"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <CheckBox
+            android:id="@+id/activities_checkBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+
+            android:padding="5dp"
+            android:textColor="#428BCA"
+            android:id="@+id/activities_subject"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:text="Subject" />
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/activities_typeTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:text="ContactType" />
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/activities_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="9076483982" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<android.support.v7.widget.Toolbar
+    android:id="@+id/listing_toolbar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/listing_tool_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/home"
+        android:textColor="#fff"
+        android:textSize="19sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="14dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/listing_addNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/add_new"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/listing_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/contact_sms"
+            android:layout_toRightOf="@+id/contact_sms"
+            android:background="@mipmap/delete"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"/>
+
+
+        <TextView
+            android:id="@+id/listing_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/contact_addNew"
+            android:layout_toRightOf="@+id/contact_addNew"
+            android:background="@mipmap/mail"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"/>
+
+
+        <TextView
+            android:id="@+id/listing_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/contact_mail"
+            android:layout_toRightOf="@+id/contact_mail"
+            android:background="@mipmap/msg"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

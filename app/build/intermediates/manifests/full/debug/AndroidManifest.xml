@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="quaere.com.realtorsmile"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/homelauncher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="quaere.com.realtorsmile.swipeview.SwipeImageMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.ContactActivity.ContactsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+        <activity android:name="quaere.com.realtorsmile.LoginActivity" />
+        <activity android:name="quaere.com.realtorsmile.MainPage" />
+        <activity android:name="quaere.com.realtorsmile.RegisterActivity" />
+        <activity android:name="quaere.com.realtorsmile.MainActivity" />
+        <activity android:name="quaere.com.realtorsmile.PropertiesActivity" />
+        <activity
+            android:name="quaere.com.realtorsmile.ContactActivity.ContactProfileActivity"
+            android:label="@string/title_activity_contact_profile" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.ContactActivity.AddGeneralActivity"
+            android:label="@string/title_activity_contact_new_add" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.UserActivities.UserActivities"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_user_activities"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.ContactActivity.AddContactBuilderActivity"
+            android:label="AddContactBuilder" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.UserActivities.MeetingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_meeting"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.UserActivities.FollowUp"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_follow_up"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.UserActivities.Inspection"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_inspection"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.UserActivities.Task"
+            android:label="@string/title_activity_task" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.UserActivities.Event"
+            android:label="@string/title_activity_event" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.ContactActivity.AddContactVendorActivity"
+            android:label="@string/title_activity_add_contact_vendor" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.ContactActivity.AddContactClientActivity"
+            android:label="@string/title_activity_add_contact_vendor" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.ContactActivity.AddContactAgentActivity"
+            android:label="@string/title_activity_add_contact_vendor" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.ListingActivities.ListingActivity"
+            android:label="ListingActvity" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.DocumentsActivity.AddNewDocumentActivity"
+            android:exported="true"
+            android:label="@string/title_activity_add_new_document" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.DocumentsActivity.FilePicker"
+            android:label="@string/title_activity_file_picker" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.DocumentsActivity.DocumentActivity"
+            android:label="@string/title_activity_document" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.ListingActivities.AddResidentialListing"
+            android:label="@string/title_activity_add_residential_listing" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.ListingActivities.AddCommercialListing"
+            android:label="@string/title_activity_add_listing_commercial_property" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.ListingActivities.AddLandListing"
+            android:label="@string/title_activity_add_land_listing" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.UserActivities.CallActivity"
+            android:label="@string/title_activity_call" >
+        </activity>
+        <activity
+            android:name="quaere.com.realtorsmile.Profile.MyProfile"
+            android:label="Profile"
+            android:theme="@style/AppTheme3333333333333333" >
+        </activity>
+
+        <!--
+        <receiver android:name=".NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        -->
+
+    </application>
+
+</manifest>
